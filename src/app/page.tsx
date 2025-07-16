@@ -46,7 +46,7 @@ export default function Home() {
 
   if (loading) {
     return (
-      <main className="container mx-auto p-4">
+      <main className="container mx-auto px-2 py-4 sm:px-4">
         <div style={{ textAlign: 'center', marginTop: '16px', marginBottom: '16px' }}>
           <div style={{ fontSize: '30px', fontWeight: 'bold' }}>Notion支出管理</div>
           <div style={{ fontSize: '30px', fontWeight: 'bold' }}>グラフビューワー</div>
@@ -60,7 +60,7 @@ export default function Home() {
 
   if (error) {
     return (
-      <main className="container mx-auto p-4">
+      <main className="container mx-auto px-2 py-4 sm:px-4">
         <div style={{ textAlign: 'center', marginTop: '16px', marginBottom: '16px' }}>
           <div style={{ fontSize: '30px', fontWeight: 'bold' }}>Notion支出管理</div>
           <div style={{ fontSize: '30px', fontWeight: 'bold' }}>グラフビューワー</div>
@@ -78,7 +78,7 @@ export default function Home() {
   const categoryData = aggregateByCategory(expenses);
 
   return (
-    <main className="container mx-auto p-4">
+    <main className="container mx-auto px-2 py-4 sm:px-4">
       <div style={{ textAlign: 'center', marginTop: '16px', marginBottom: '16px' }}>
         <div style={{ fontSize: '30px', fontWeight: 'bold' }}>Notion支出管理</div>
         <div style={{ fontSize: '30px', fontWeight: 'bold' }}>グラフビューワー</div>
@@ -89,8 +89,8 @@ export default function Home() {
         background: 'linear-gradient(to right, #dbeafe, #f3e8ff)',
         borderRadius: '16px',
         boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
-        padding: '32px',
-        marginBottom: '32px',
+        padding: '16px',
+        marginBottom: '24px',
         border: '1px solid #e5e7eb'
       }}>
         <h2 style={{
@@ -102,14 +102,14 @@ export default function Home() {
         }}>📊 支出概要</h2>
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
-          gap: '24px'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
+          gap: '16px'
         }}>
           <div style={{
             textAlign: 'center',
             backgroundColor: 'white',
             borderRadius: '12px',
-            padding: '24px',
+            padding: '16px',
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
             border: '2px solid #dbeafe'
           }}>
@@ -136,7 +136,7 @@ export default function Home() {
             textAlign: 'center',
             backgroundColor: 'white',
             borderRadius: '12px',
-            padding: '24px',
+            padding: '16px',
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
             border: '2px solid #dcfce7'
           }}>
@@ -165,7 +165,7 @@ export default function Home() {
             textAlign: 'center',
             backgroundColor: 'white',
             borderRadius: '12px',
-            padding: '24px',
+            padding: '16px',
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
             border: '2px solid #e9d5ff'
           }}>
@@ -192,7 +192,7 @@ export default function Home() {
             textAlign: 'center',
             backgroundColor: 'white',
             borderRadius: '12px',
-            padding: '24px',
+            padding: '16px',
             boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
             border: '2px solid #fed7aa'
           }}>
@@ -220,8 +220,8 @@ export default function Home() {
 
       <div style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(500px, 1fr))',
-        gap: '32px',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+        gap: '16px',
         marginBottom: '48px'
       }}>
         <div style={{
@@ -233,7 +233,7 @@ export default function Home() {
           <div style={{
             backgroundColor: 'white',
             borderRadius: '18px',
-            padding: '32px'
+            padding: '16px'
           }}>
             <div style={{
               display: 'flex',
@@ -276,7 +276,7 @@ export default function Home() {
           <div style={{
             backgroundColor: 'white',
             borderRadius: '18px',
-            padding: '32px'
+            padding: '16px'
           }}>
             <div style={{
               display: 'flex',
@@ -319,7 +319,7 @@ export default function Home() {
           <div style={{
             backgroundColor: 'white',
             borderRadius: '18px',
-            padding: '32px'
+            padding: '16px'
           }}>
             <div style={{
               display: 'flex',
