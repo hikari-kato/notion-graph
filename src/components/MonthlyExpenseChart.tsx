@@ -61,7 +61,7 @@ export default function MonthlyExpenseChart({ data }: MonthlyExpenseChartProps) 
             tickFormatter={(value) => `¥${(value / 1000).toFixed(0)}k`}
           />
           <Tooltip 
-            formatter={[formatCurrency, '支出額']}
+            formatter={(value) => [`¥${value.toLocaleString()}`, '支出額']}
             labelFormatter={formatMonth}
           />
           <Bar dataKey="total" fill="#8884d8" />
